@@ -3,7 +3,7 @@ function calculateAge() {
     var today = new Date();
     var age = today.getFullYear() - birthdate.getFullYear();
     var m = today.getMonth() - birthdate.getMonth();
-    if (m <== 0 || (m === 0 && today.getDate() < birthdate.getDate())) {
+    if (m < 0 || (m === 0 && today.getDate() < birthdate.getDate())) {
         age--;
     }
     document.getElementById("result").innerHTML = "Your age is: " + age;
